@@ -34,4 +34,4 @@ USER app
 COPY --from=build-website /website/build/web ./public
 
 EXPOSE 3000
-CMD ["serve", "-s", "public", "-l", "3000"]
+CMD ["serve", "public", "-l", "3000"]
